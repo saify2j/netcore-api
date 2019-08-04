@@ -31,7 +31,7 @@ namespace netcore_api.Controllers
         {
             if (dayNumber > 7 || dayNumber < 1)
             {
-                return "No such week day";
+                return "Hello from IIT, Mr.Rakib";
             }
 
             return weekDays[dayNumber - 1];
