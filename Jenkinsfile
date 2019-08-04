@@ -61,7 +61,7 @@ node {
 
       /* This SSH Session deploys app into AppServer */
       withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'AppServer',
-      usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD']])
+      usernameVariable: 'root', passwordVariable: 'Demo@5033#']])
       {
         remote.name = 'appserver'
         remote.host = "${env.ServerIP}"  //From ENVIRONMENT VARIABLE
